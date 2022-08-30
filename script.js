@@ -54,16 +54,16 @@ function mostrarQuestao() {
         finalizarQuiz();
     }
 
-function finalizarQuiz() {
-  var pontuacao = 3*(formulario[auxiliar-1].options.length+1);
+    function finalizarQuiz() {
+    var pontuacao = 3*(formulario[auxiliar-1].options.length+1);
 
-  document.getElementById("listaRespostas").style.display = "none";
-  
-  document.getElementById("confirmar").innerHTML = "Refazer quiz";
+    document.getElementById("listaRespostas").style.display = "none";
+    
+    document.getElementById("confirmar").innerHTML = "Refazer quiz";
 
-  document.getElementById("titulo").innerHTML = "QUIZ DOS VALORES DA GTI";
+    document.getElementById("titulo").innerHTML = "QUIZ DOS VALORES DA GTI";
 
-  document.getElementById("resultado").innerHTML = "Sua pontuação: " + (score*100/pontuacao) + "%";
+    document.getElementById("resultado").innerHTML = "Sua pontuação: " + (score*100/pontuacao) + "%";
 
-}
+    }
 }
